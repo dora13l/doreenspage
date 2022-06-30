@@ -3,6 +3,20 @@
   background: $navbar-color;
 }
 
+.navbar-lewagon {
+  justify-content: center;
+  background: $navbar-color;
+  transition: 0.5s ease;
+  height: 85px !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-lewagon.scrolled {
+  background:$purple2 !important;
+}
+
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
@@ -11,6 +25,7 @@
   color: white !important;
   font-size: large !important;
   font-weight: bolder !important;
+  margin-right: 50px;
 }
 
 .nav-center {
