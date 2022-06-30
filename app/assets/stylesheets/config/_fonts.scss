@@ -1,10 +1,10 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Paytone+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Heebo&family=Open+Sans:wght@800&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Heebo", "sans-serif";
-$headers-font: "Paytone One", "sans-serif";
+$headers-font: 'Open Sans', 'sans-serif';
+$code-text: "Courier New";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

@@ -1,11 +1,58 @@
 .title-name {
-  letter-spacing: 50px;
-  font-size: 80px !important;
+  font-size: 50px !important;
   color: $secondary-color;
+  font-weight: bold !important;
+  margin-bottom: 25px;
 }
 
 .home-title {
   justify-content: center;
   text-align: center;
-  margin-top: 48px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: $secondary-color;
+  border-width: 8px;
+}
+
+h2 {
+  color: $secondary-color;
+}
+
+.home-center {
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 350px;
+}
+
+.title-subheading {
+  color: $white !important;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+#about, #work, #contact{
+  height: 1000px;
+  width: 100%;
+}
+
+.profile {
+  margin-top: auto;
+}
+
+.format-scroll {
+  margin-top: 200px;
+}
+
+.format-scroll-home {
+  margin-top: 100px;
 }
