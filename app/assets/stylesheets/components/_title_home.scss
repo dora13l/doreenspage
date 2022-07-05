@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-img {
+.img-prof {
   border-radius: 50%;
   border-style: solid;
   border-color: $secondary-color;
@@ -40,8 +40,19 @@ h2 {
   margin-bottom: 25px;
 }
 
-#about, #work, #contact{
+#about, #contact{
   height: 1000px;
+  width: 100%;
+}
+
+#work {
+  height: 2000px;
+  width: 100%;
+}
+
+
+#home {
+  height: 500px;
   width: 100%;
 }
 
@@ -49,10 +60,6 @@ h2 {
   margin-top: auto;
 }
 
-.format-scroll {
-  margin-top: 200px;
-}
-
-.format-scroll-home {
-  margin-top: 100px;
+.format-scroll{
+ padding-top: 200px;
 }
