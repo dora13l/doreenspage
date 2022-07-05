@@ -3,7 +3,7 @@
   <div id='home' class="home-center"><a href="home"></a>
     <div class="profile">
       <div class="profile-image">
-        <%= image_tag "profilepic.jpg", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <%= image_tag "profilepic.jpg", class:"img-prof", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
       </div>
 
       <div class="profile-writing">
@@ -73,17 +73,18 @@
 
   <div id="work"><a href="work"></a>
     <h2 class="format-scroll">My projects</h2>
-    <div class="about-writing">
-      <p class="about-p">Here are some projects I have created
-      </p>
+    <p class="work-p">Here are some projects I have created</p>
+    <div class="work-divide">
+      <div class="work-img" >
+        <button id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal"><%= image_tag "calculator.png", class:"work-pic"%></button>
+      </div>
 
-    <div>
-
-
-    </div>
+      <%= render "modals/projectonemodal"%>
 
     </div>
   </div>
+
+
 
   <div id="contact"><a href="contact"></a>
     <h2 class="format-scroll">Get in touch with me!</h2>

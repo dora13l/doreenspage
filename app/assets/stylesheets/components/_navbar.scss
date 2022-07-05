@@ -26,13 +26,6 @@
   font-size: large !important;
   font-weight: bolder !important;
   margin-right: 50px;
-}
-
-.nav-center {
-  justify-content: center !important;
-}
-
-a {
   background-image: linear-gradient(
     to right,
     $secondary-color,
@@ -49,7 +42,11 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:before{
+.nav-center {
+  justify-content: center !important;
+}
+
+.nav-link:before{
   content: '';
   background: $secondary-color;
   display: block;
@@ -61,10 +58,10 @@ a:before{
   transition: all 0.3s ease-in-out;
 }
 
-a:hover {
+.nav-link:hover {
  background-position: 0;
 }
 
-a:hover::before{
+.nav-link:hover::before{
   width: 100%;
 }
