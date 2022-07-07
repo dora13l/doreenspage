@@ -1,20 +1,7 @@
 .work-pic {
-  height: 350px;
-  width: 500px;
-  object-fit:cover;
-}
-
-.work-divide {
-  display: flex;
-  gap: 150px;
-  justify-content: center;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.work-para {
-  width:50%;
-  margin: auto;
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
 }
 
 .work-p {
@@ -51,10 +38,49 @@
   margin-top: 72px;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .modalimage{
-  width: 100%;
+  width: 80%;
   object-fit:cover;
   margin: 24px;
+  border-bottom: solid;
+  border-color: $greyborder;
+  padding-bottom: 50px;
+}
+
+.modal-title {
+  margin-left: auto;
+}
+
+.work-card-header{
+  text-align: center;
+  height: 125px;
+  padding: 24px;
+}
+
+.work-card{
   border-style: solid;
   border-color: $purple2;
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.work-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+  all: unset;
+}
+
+.work-color{
+  color: $purple2;
 }
