@@ -1,0 +1,20 @@
+.list-inline li {
+  display: inline-block;
+}
+
+.social-icon {
+  font-size: 50px;
+  color: $secondary-color;
+  margin: 8px 24px;
+}
+
+.social-icon:hover {
+  color:$purple2;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+}
