@@ -1,0 +1,55 @@
+<%= form_for @contact do |f| %>
+  <div class="form-whole">
+    <div class="center-area">
+      <div class="label-side">
+        <div>
+          <%= f.label :name %>
+        </div>
+        <div>
+          <%= f.text_field  :name, required: true, class:"contact-form-text-area contact-box" %>
+        </div>
+      </div>
+    </div>
+
+    </br>
+
+    <div class="center-area">
+      <div class="label-side">
+        <div>
+          <%= f.label :email %>
+        </div>
+        <div>
+          <%= f.text_field :email, required: true, class:"contact-form-text-area contact-box" %>
+        </div>
+      </div>
+    </div>
+
+    </br>
+
+    <div class="center-area">
+      <div class="label-side">
+        <div>
+          <%= f.label :message %>
+        </div>
+        <div>
+          <%= f.text_area :message, rows: 8, cols: 40, required: true, class:"contact-form-text-area contact-box",
+              placeholder: "Send me a message"%>
+        </div>
+      </div>
+    </div>
+
+    <div class= "d-none">
+      <%= f.label :nickname %>
+      <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+
+    <div class="button-area">
+      <div class="label-side">
+        <div>
+          <%= f.submit 'Send Message', class: 'btn contact-button' %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+<% end %>
