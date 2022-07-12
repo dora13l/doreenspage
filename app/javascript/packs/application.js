@@ -14,3 +14,6 @@ ActiveStorage.start()
 
 import "controllers"
 import "bootstrap"
+
+window.$ = window.jQuery = require("jquery");
+import "bootstrap/dist/js/bootstrap.bundle.js"
