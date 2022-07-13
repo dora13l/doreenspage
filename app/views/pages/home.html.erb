@@ -1,11 +1,9 @@
 <div class="container">
-
   <div id='home' class="home-center"><a href="home"></a>
     <div class="profile">
       <div class="profile-image">
         <%= image_tag "profile.jpg", class:"img-prof", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
       </div>
-
       <div class="profile-writing">
         <h1 class="title-name">Doreen Lam</h1>
         <p class="title-subheading">Full stack web developer</p>
@@ -14,8 +12,8 @@
     </div>
   </div>
 
-  <div id="about" ><a href="about"></a>
-    <h2 class="format-scroll">About me</h2>
+  <div id="about"><a href="about"></a>
+    <h2 class="format-scroll about-writing ">About me</h2>
     <div class="about-position">
       <div class="about-writing">
         <p class="about-p">Hi there! My name is Doreen. I am a data analyst turned full stack developer.
@@ -27,35 +25,41 @@
         </p>
 
         <p class="about-p">
-        When I am not coding, you can usually find me doodling on my Wacom or knitting.
+        When I am not coding, you can usually find me doodling on my Wacom, knitting or playing with Arduino.
         </p>
       </div>
 
-      <div>
+      <div class="about-writing">
         <h3 class="tech-margin">Tech skills</h3>
         <div>
           <h4>Front end</h4>
           <ul class="about-p about-ul">
-            <li >HTML</li>
+            <li>HTML</li>
             <li>CSS (inc. SASS) </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Frameworks</h4>
+          <ul class="about-p about-ul">
+            <li>Ruby on rails</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Languages</h4>
+          <ul class="about-p about-ul">
+            <li>R (and Rshiny)</li>
+            <li>Python</li>
+            <li>Ruby</li>
             <li>JavaScript</li>
           </ul>
         </div>
 
         <div>
-          <h4>Frameworks and DevOps</h4>
+          <h4>Backend as a Service</h4>
           <ul class="about-p about-ul">
-            <li>Ruby on rails</li>
             <li>Heroku</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Data</h4>
-          <ul class="about-p about-ul">
-            <li>R (and Rshiny)</li>
-            <li>Python</li>
-            <li>SQL</li>
           </ul>
         </div>
 
@@ -70,9 +74,8 @@
     </div>
   </div>
 
-
   <div id="work"><a href="work"></a>
-    <h2 class="format-scroll">My projects</h2>
+    <h2 class="format-scroll about-writing">My projects</h2>
     <div class="work-grid">
       <button id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <div class= "work-card">

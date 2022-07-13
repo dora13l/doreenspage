@@ -1,40 +1,92 @@
-.about-writing {
-  width: 50%;
+@media only screen and (max-width: 600px) {
+  .about-writing {
+    width: 100%;
+    padding: 0 16px 0 16px;
+  }
+
+  .about-p {
+    color: $white !important;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .about-position {
+    display: flex;
+    gap: 50px !important;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    color: $secondary-color;
+  }
+
+  h4 {
+    color: $secondary-color;
+  }
+
+  .tech-margin{
+   margin-bottom: 25px;
+  }
+
+  .about-ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+  .about-ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $secondary-color; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 }
 
-.about-p {
-  color: $white !important;
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
 
-.about-position {
-  display: flex;
-  gap: 100px
-}
 
-h3 {
-  color: $secondary-color;
-}
+@media only screen and (min-width: 601px) {
+  .about-p {
+    color: $white !important;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 
-h4 {
-  color: $secondary-color;
-}
+  .about-writing {
+    width: 50%;
+  }
 
-.tech-margin{
- margin-bottom: 25px;
-}
+  .about-position {
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+  }
 
-.about-ul {
-  list-style: none; /* Remove default bullets */
-}
+  h3 {
+    color: $secondary-color;
+  }
 
-.about-ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: $secondary-color; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  h4 {
+    color: $secondary-color;
+  }
+
+  .tech-margin{
+  margin-bottom: 25px;
+  }
+
+  .about-ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+  .about-ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $secondary-color; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 }
