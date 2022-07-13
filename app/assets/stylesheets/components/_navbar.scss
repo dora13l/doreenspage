@@ -1,67 +1,163 @@
-.navbar-lewagon {
-  justify-content: center;
-  background: $navbar-color;
+@media only screen and (min-width: 601px) {
+  .navbar-lewagon {
+      justify-content: center;
+      background: $navbar-color;
+      transition: 0.5s ease;
+      height: 85px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+
+  .navbar-lewagon.scrolled {
+    background:$purple2 !important;
+  }
+
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: large !important;
+    font-weight: bolder !important;
+    margin-right: 50px;
+    background-image: linear-gradient(
+      to right,
+      $secondary-color,
+      $secondary-color 50%,
+      white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-center {
+    justify-content: center !important;
+  }
+
+  .nav-link:before{
+    content: '';
+    background: $secondary-color;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-link:hover {
+  background-position: 0;
+  }
+
+  .nav-link:hover::before{
+    width: 100%;
+  }
+
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+    justify-content: center;
+}
 }
 
-.navbar-lewagon {
-  justify-content: center;
-  background: $navbar-color;
-  transition: 0.5s ease;
-  height: 85px !important;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+@media only screen and (max-width: 600px) {
+  .navbar-lewagon {
+      justify-content: space-around;
+      background: $purple2;
+      transition: 0.5s ease;
+      height: 85px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .navbar-nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: row !important;
+    width: 100%;
+    justify-content: space-around !important;
 }
 
-.navbar-lewagon.scrolled {
-  background:$purple2 !important;
-}
+  .nav-center {
+    height: 100% !important;
+    justify-content: space-around !important;
+    width: 100% !important;
+  }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
 
-.nav-link {
-  color: white !important;
-  font-size: large !important;
-  font-weight: bolder !important;
-  margin-right: 50px;
-  background-image: linear-gradient(
-    to right,
-    $secondary-color,
-    $secondary-color 50%,
-    white 50%
-  );
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
+  .collapse:not(.show) {
+    display: flex;
+    text-align: center;
+    justify-content: space-around !important;
+  }
 
-.nav-center {
-  justify-content: center !important;
-}
+  .nav-link {
+    color: white !important;
+    font-size: smaller !important;
+    font-weight: bolder !important;
+    margin-right: 50px;
+    background-image: linear-gradient(
+      to right,
+      $secondary-color,
+      $secondary-color 50%,
+      white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
 
-.nav-link:before{
-  content: '';
-  background: $secondary-color;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
-}
 
-.nav-link:hover {
- background-position: 0;
-}
+  .nav-link:before{
+    content: '';
+    background: $secondary-color;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
 
-.nav-link:hover::before{
-  width: 100%;
+  .nav-link:hover {
+  background-position: 0;
+  }
+
+  .nav-link:hover::before{
+    width: 100%;
+  }
+
+  .nav-item{
+    text-align: center !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 }

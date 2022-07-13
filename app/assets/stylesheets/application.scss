@@ -12,12 +12,14 @@
 @import "components/index";
 @import "pages/index";
 
-body {
-  background-color: $primary-color;
-}
+
 
 //= require bootstrap/dist/css/bootstrap
 
 .hidden {
   display: none;
  }
+
+h2 {
+  color: $secondary-color;
+}

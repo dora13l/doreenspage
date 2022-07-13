@@ -1,92 +1,189 @@
-.work-pic {
-  width: 100%;
-  height: 250px;
-  object-fit: fill;
+@media only screen and (max-width: 600px) {
+  .work-pic {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+  }
+
+  .work-p {
+    color: $white !important;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .modal-p {
+    color: black !important;
+    font-size: 18px;
+  }
+
+  .work-button {
+    color: white !important;
+    background: $purple2 !important;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+
+  .work-button:hover {
+    color: $gray !important;
+    background: $secondary-color !important;
+  }
+
+  .modal-fullscreen {
+    width: 80% !important;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modalimage{
+    width: 80%;
+    object-fit:cover;
+    margin: 24px;
+    border-bottom: solid;
+    border-color: $greyborder;
+    padding-bottom: 50px;
+  }
+
+  .modal-title {
+    margin-left: auto;
+  }
+
+  .work-card-header{
+    text-align: center;
+    height: 125px;
+    padding: 24px;
+  }
+
+  .work-card{
+    border-style: solid;
+    border-color: $purple2;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .work-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr !important;
+    margin-top: 36px;
+  }
+
+  button {
+    all: unset;
+  }
+
+  .work-color{
+    color: $purple2;
+  }
+
+  .button-area{
+    text-align: center;
+    margin-top: 36px;
+  }
 }
 
-.work-p {
-  color: $white !important;
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
+@media only screen and (min-width: 601px) {
+  .work-pic {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+  }
 
-.modal-p {
-  color: black !important;
-  font-size: 18px;
-}
+  .work-p {
+    color: $white !important;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 
-.work-button {
-  color: white !important;
-  background: $purple2 !important;
-  color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-}
+  .modal-p {
+    color: black !important;
+    font-size: 18px;
+  }
 
-.work-button:hover {
-  color: $gray !important;
-  background: $secondary-color !important;
-}
+  .work-button {
+    color: white !important;
+    background: $purple2 !important;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
 
-.modal-fullscreen {
-  width: 80% !important;
-  justify-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 72px;
-}
+  .work-button:hover {
+    color: $gray !important;
+    background: $secondary-color !important;
+  }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .modal-fullscreen {
+    width: 80% !important;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+  }
 
-.modalimage{
-  width: 80%;
-  object-fit:cover;
-  margin: 24px;
-  border-bottom: solid;
-  border-color: $greyborder;
-  padding-bottom: 50px;
-}
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.modal-title {
-  margin-left: auto;
-}
+  .modalimage{
+    width: 80%;
+    object-fit:cover;
+    margin: 24px;
+    border-bottom: solid;
+    border-color: $greyborder;
+    padding-bottom: 50px;
+  }
 
-.work-card-header{
-  text-align: center;
-  height: 125px;
-  padding: 24px;
-}
+  .modal-title {
+    margin-left: auto;
+  }
 
-.work-card{
-  border-style: solid;
-  border-color: $purple2;
-  border-radius: 8px;
-  background-color: white;
-  overflow: hidden;
-}
+  .work-card-header{
+    text-align: center;
+    height: 125px;
+    padding: 24px;
+  }
 
-.work-grid {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 36px;
-}
+  .work-card{
+    border-style: solid;
+    border-color: $purple2;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+  }
 
-button {
-  all: unset;
-}
+  .work-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 36px;
+  }
 
-.work-color{
-  color: $purple2;
-}
+  button {
+    all: unset;
+  }
 
-.button-area{
-  text-align: center;
-  margin-top: 36px;
+  .work-color{
+    color: $purple2;
+  }
+
+  .button-area{
+    text-align: center;
+    margin-top: 36px;
+  }
 }
